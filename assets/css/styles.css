@@ -26,6 +26,8 @@ a {
 
 .btn {
 	min-width: 180px;
+	padding: 13px 11px;
+	text-align: center;
 	border-radius: 24.5px;
 	background: #171100;
 	color: #fff;
@@ -78,7 +80,7 @@ a {
 
 /* Main */
 .main {
-	margin-top: 64px;
+	padding: 64px 0 65px;
 }
 
 .main .home {
@@ -172,6 +174,8 @@ a {
 	min-width: 180px;
 	padding: 18px 11px;
 	text-align: center;
+	font-size: 1.8rem;
+	font-weight: 600;
 	border-radius: 32px;
 	background: #ffb900;
 }
@@ -221,4 +225,115 @@ a {
 	font-size: 1.8rem;
 	font-weight: 400;
 	line-height: 1.66;
+}
+
+/* Courses */
+.Courses {
+	margin-top: 200px;
+}
+
+.Courses-section .row-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Courses-section .sub-title {
+	color: #171100;
+	font-family: Sen;
+	font-size: 3.8rem;
+	font-weight: 700;
+	line-height: 1.36;
+	letter-spacing: -0.76px;
+}
+
+.Courses-section .desc {
+	width: 458px;
+	margin-top: 16px;
+	color: #5f5b53;
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 1.66;
+}
+
+.Courses-section .arrow-icon-left {
+	margin-right: 12px;
+}
+
+.Courses-section .icon {
+	width: 40px;
+	height: 40px;
+}
+
+.Courses-section .icon:hover {
+	opacity: 0.6;
+}
+
+.row-body {
+	margin-top: 55px;
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.row-body .body {
+	width: 370px;
+}
+
+.row-body .body .image {
+	width: 370px;
+	height: 278px;
+	border-radius: 12px 12px 0px 0px;
+	object-fit: cover;
+}
+
+.row-body .Courses-info {
+	padding: 16px 22px 32px;
+}
+
+.courses-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.courses-row .rating .icon {
+	width: 18px;
+	height: 18px;
+}
+
+.courses-row .rating .hightlight-number {
+	color: #fea31b;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.row-body .Courses-info .title {
+	color: #171100;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.66;
+}
+
+.row-body .Courses-info .desc {
+	margin-top: 8px;
+	width: 326px;
+	color: #5f5b53;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.85;
+}
+
+.row-body .row-bottom {
+	margin-top: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.row-body .row-bottom .btn-Courses {
+	min-width: 118px;
+	padding: 11px;
+	border-radius: 25px;
+	font-size: 1.4rem;
+	font-weight: 600;
 }
