@@ -8,7 +8,6 @@ html {
 }
 
 body {
-	height: 10000px;
 	font-family: "Poppins", sans-serif;
 	font-size: 1.6rem;
 }
@@ -58,20 +57,33 @@ a {
 
 .navbar ul {
 	display: flex;
-	gap: 42px;
 	margin-left: auto;
 }
 
 .navbar li a {
+	position: relative;
 	color: #5f5b53;
+	padding: 8px 21px;
 	font-size: 1.6rem;
 	font-weight: 600;
 	line-height: 1.75;
 }
 
 .navbar li a:hover {
+	text-shadow: 1px 0 0 currentColor;
 	color: #171100;
-	text-decoration: underline;
+}
+
+.navbar li a::after {
+	position: absolute;
+	left: 21px;
+	bottom: 6px;
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 2px;
+	border-radius: 1px;
+	background: #171100;
 }
 
 .navbar .action-link {
@@ -85,6 +97,7 @@ a {
 
 /* Main */
 .main {
+	background: #fffcf4;
 	padding: 64px 0 65px;
 }
 
@@ -260,13 +273,27 @@ a {
 	line-height: 1.66;
 }
 
-.Courses-section .arrow-icon-left {
-	margin-right: 12px;
+.Courses-section .arrow {
+	display: flex;
+	gap: 18px;
 }
 
-.Courses-section .icon {
+.Courses-section .control {
+	color: #ffb900;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 40px;
 	height: 40px;
+	border: 1px solid #ffb900;
+	border-radius: 50%;
+	background: transparent;
+}
+
+.Courses-section .control:hover {
+	color: #fff;
+	background-color: #ffb900;
+	cursor: pointer;
 }
 
 .row-body {
@@ -545,8 +572,8 @@ a {
 .blog-body {
 	margin-top: 55px;
 	display: flex;
-	gap: 30px;
 	justify-content: space-between;
+	gap: 30px;
 }
 
 .blog-info {
@@ -565,6 +592,8 @@ a {
 }
 
 .blog-section .year {
+	display: flex;
+	align-items: center;
 	color: #5f5b53;
 	font-size: 1.4rem;
 	font-weight: 400;
@@ -572,11 +601,11 @@ a {
 }
 
 .blog-section .year::before {
-	margin: 0 4px 2px 0;
-	content: "";
-	display: inline-block;
+	margin-right: 4px;
 	width: 6px;
 	height: 6px;
+	content: "";
+	display: inline-block;
 	border-radius: 50%;
 	background-color: #ffb900;
 }
@@ -673,19 +702,19 @@ a {
 }
 
 .footer .col:first-child {
-	width: 267px;
+	width: 35%;
 }
 
 .footer .col:nth-child(2) {
-	width: 130px;
+	width: 22%;
 }
 
 .footer .col:nth-child(3) {
-	width: 137px;
+	width: 22%;
 }
 
 .footer .col:nth-child(4) {
-	width: 231px;
+	width: 19.7%;
 }
 
 .footer .col .list a {
