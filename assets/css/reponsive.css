@@ -240,6 +240,14 @@
     .footer .row-top {
         flex-direction: column;
     }
+
+    .footer .col .list a {
+        white-space: nowrap;
+    }
+
+    .footer .info {
+        white-space: nowrap;
+    }
 }
 
 /* Tablet */
